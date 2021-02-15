@@ -2,7 +2,7 @@ jobs:
   include:
     - os: windows
       language: c
-      arch: arm64
+      arch: amd64
       vm:
         size: 2x-large
       before_install:
@@ -90,28 +90,9 @@ jobs:
       script:
         - clang -coverage -O0 hello_world.c -o hello_world
         - ./hello_world
-    - os: osx
-      language: c
-      arch: arm64
-      vm:
-        size: 2x-large
-      before_install:
-        - cmake --version
-        - git --version
-        - git --help
-        - hg --version
-        - svn --version
-        - clang --version
-        - uname -a
-        - lscpu
-        - free -h
-        - lshw -short
-      script:
-        - clang -coverage -O0 hello_world.c -o hello_world
-        - ./hello_world
     - os: freebsd
       language: c
-      arch: arm64
+      arch: amd64
       vm:
         size: 2x-large
       before_install:
