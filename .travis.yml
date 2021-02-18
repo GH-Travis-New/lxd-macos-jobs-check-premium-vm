@@ -4,7 +4,7 @@ jobs:
       language: c
       arch: amd64
       vm:
-        size: x-large
+        size: 2x-large
       before_install:
         - cmake --version
         - git --version
