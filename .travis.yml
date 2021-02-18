@@ -1,10 +1,10 @@
 jobs:
   include:
-    - os: windows
+    - os: freebsd
       language: c
       arch: amd64
       vm:
-        size: 2x-large
+        size: medium
       before_install:
         - cmake --version
         - git --version
