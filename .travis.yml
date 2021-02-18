@@ -1,6 +1,6 @@
 jobs:
   include:
-    - os: freebsd
+    - os: linux
       language: c
       arch: amd64
       vm:
