@@ -158,7 +158,6 @@ jobs:
     - os: freebsd
       language: c
       arch: amd64
-      #dist: bionic
       vm:
         size: 2x-large
       before_install:
